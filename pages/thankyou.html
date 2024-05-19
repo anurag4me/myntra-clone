@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you for order</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .thankyou-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-home {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 3px;
+            border-width: 0px;
+            padding: 10px 16px;
+            background-color: rgb(255, 63, 108);
+            cursor: pointer;
+            width: 25%;
+            color: #282c3f;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo_container"><a href="#"><img class="myntra_home" src="../images/myntra_logo.webp" alt="Myntra Home"></a></div>
+        <div class="nav_bar">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </div>
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_box" type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+            <a href="../pages/bag.html" class="action_container">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="thankyou-container">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+              </svg>
+              <p class="success">Thank you for purchase of amount ₹<span class="amount">9999</span></p>
+              <a href="../index.html" class="btn-home">
+                <div class="css-xjhrni">Go back to Home page</div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>Online Shopping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>Online Shopping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>Online Shopping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2024 www.myntra.com. All rights reserved.</div>
+    </footer>
+    <script src="../scripts/index.js"></script>
+    <script>
+        let amount = document.querySelector('.amount')
+        let finalPayment = localStorage.getItem('finalPayment')
+        amount.innerText = finalPayment;
+    </script>
+</body>
+</html>
